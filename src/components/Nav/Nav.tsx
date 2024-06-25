@@ -1,8 +1,8 @@
 import Link from "../Link/Link";
 
 const Nav = ({ title }: { title: string }) => (
-  <nav>
-    <h1 style={{ animation: "appear 0.25s 0.2s both" }}>{title}</h1>
+  <nav className="appear">
+    <h1  className="appear" style={{ animation: "appear 0.25s 0.2s both" }}>{title}</h1>
     <ul style={{ animation: "appear 0.25s 0.4s both" }}>
       <li>
         <Link to="/about" colorEnd="#fff">
@@ -10,7 +10,7 @@ const Nav = ({ title }: { title: string }) => (
         </Link>
       </li>
       <li>
-        <Link to="/portfolio" colorEnd="#000">
+        <Link to="/portofolio" colorEnd="#000">
           Portfolio
         </Link>
       </li>
