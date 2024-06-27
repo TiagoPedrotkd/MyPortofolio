@@ -1,0 +1,103 @@
+.sections {
+  transform-style: preserve-3d;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-direction: column;
+  gap: 50px;
+  color: white;
+}
+
+.sections:nth-child(even) {
+  background-color: rgb(255 255 255 / 4%);
+}
+
+.sections:last-child {
+  height: 60vh;
+}
+
+.no-parallax {
+  background-color: #222;
+  z-index: 1;
+  padding: 0 80px;
+  gap: 50px;
+  justify-content: center;
+}
+
+.no-parallax p {
+  opacity: 0.5;
+  margin: 0;
+}
+
+.parallax {
+  height: 40vh;
+}
+
+.sections h1 {
+  text-align: center;
+  font-size: 60px;
+}
+
+.parallax::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(1.5);
+  background-size: 100%;
+  z-index: 0;
+}
+
+.sections h2 {
+  font-weight: 400;
+}
+
+.about-div {
+  padding: 10%;
+  margin: 10%;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0; /* Inicialmente oculto */
+}
+
+.about-div.in {
+  animation: fadeIn 3s forwards; /* Animação de entrada mais lenta */
+}
+
+.about-div.out {
+  animation: fadeOut 3s forwards; /* Animação de saída mais lenta */
+}
+
+.about-div img {
+  width: 32%;
+  border-radius: 10%;
+  justify-self: flex-end;
+}
+
+.about-div div {
+  margin-top: 10%;
+  margin-right: 10%;
+}
+
+.about-div div h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.about-div div p {
+  font-size: 14px;
+}
+
+/* Definindo as animações */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-80px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; transform: translateY(0); }
+  to { opacity: 0; transform: translateY(80px); }
+}
