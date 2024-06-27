@@ -1,7 +1,7 @@
 import Nav from "../Nav/Nav";
 
 const Contact = () => (
-  <section style={{ background: "#fff", color: "#000" }}>
+  <section style={{ background: "#222", color: "#fff" }}>
     <Nav title="Contact" />
   </section>
 );
