@@ -4,11 +4,10 @@ import './Section.css'; // Certifique-se de criar e importar seu arquivo CSS
 interface SectionProps {
   title: string;
   text: string;
-  imageSrc: string;
   className: string;
 }
 
-const Section: React.FC<SectionProps> = ({ title, text, imageSrc, className }) => {
+const Section: React.FC<SectionProps> = ({ title, text, className }) => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
 
@@ -46,8 +45,14 @@ const Section: React.FC<SectionProps> = ({ title, text, imageSrc, className }) =
         <div>
           <h2>{title}</h2>
           <p>{text}</p>
+          <div className={`${className}-social-links`}>
+            <a href="https://github.com/TiagoPedrotkd"><i className='ai-github-fill'></i></a>
+            <a href="https://www.linkedin.com/in/tiago-soares-5b1ab4282"><i className='ai-linkedin-box-fill'></i></a>
+            <a href="https://wa.me/351965619393"><i className='ai-whatsapp-fill'></i></a>
+          </div>
         </div>
-        <img src={imageSrc} alt={title} />
+        <div className='card'>
+        </div>
       </div>
     </section>
   );
