@@ -152,6 +152,10 @@
   -webkit-text-fill-color: transparent;
 }
 
+.about-cube-skills{
+  display: none;
+}
+
 /* Definindo as animações */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(-80px); }
@@ -167,6 +171,23 @@
   display: none;
 }
 
+.skills-cube-skills{
+  display:flex;
+  justify-content: center;
+}
+
+.skills-title{
+  display: none;
+}
+
+.skills-text{
+  display: none;
+}
+
 .contact-social-links{
+  display: none;
+}
+
+.contact-cube-skills{
   display: none;
 }
