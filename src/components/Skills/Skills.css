@@ -1,13 +1,14 @@
 /* Container styles */
 .skills-container {
-  width: 70%;
+  width: 65%;
   height: 200px;
   padding: 16px;
   border-radius: 8px;
   display: flex;
   align-items: center;
-  overflow: hidden;
   justify-content: center; /* Centraliza os itens horizontalmente */
+  overflow: hidden;
+  margin: 0 auto; /* Centraliza o container na página */
 }
 
 /* Skill item styles */
@@ -36,7 +37,10 @@
 
 /* Marquee wrapper styles */
 .marquee-wrapper {
-    height: 200px;
-  flex: 1;
+  display: flex; /* Adiciona flexbox para centralização */
+  justify-content: center; /* Centraliza horizontalmente o marquee */
+  align-items: center; /* Centraliza verticalmente o marquee */
+  height: 100%; /* Garante que a altura seja 100% do container */
+  width: 100%; /* Garante que a largura seja 100% do container */
   overflow: hidden;
 }

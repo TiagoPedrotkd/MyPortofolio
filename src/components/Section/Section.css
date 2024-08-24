@@ -145,11 +145,33 @@
   color: darkgray;
 }
 
-.about-div div .about-social-links i:hover{
+.about-div div .about-social-links a:hover{
+  transform: scale(1.2);
+}
+
+.about-div div .about-social-links .a-github i:hover{
   text-decoration: none;
-  background: linear-gradient(-30deg, #fc00ff 10%, #00dbde 100%);
+  background-color:#fff; /* Cor do GitHub */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.about-div div .about-social-links .a-linkedin i:hover{
+  text-decoration: none;
+  background-color:#0A66C2; /* Cor do GitHub */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-div div .about-social-links .a-whatsapp i:hover{
+  text-decoration: none;
+  background-color:#25D366; /* Cor do GitHub */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-div .card .contact-card{
+  display: none;
 }
 
 .about-cube-skills{
@@ -176,6 +198,10 @@
   justify-content: center;
 }
 
+.skills-div .card .contact-card{
+  display: none;
+}
+
 .skills-title{
   display: none;
 }
@@ -184,10 +210,50 @@
   display: none;
 }
 
+.skills-container.in {
+  animation: fadeIn 3s forwards; /* Animação de entrada */
+}
+
+.skills-container.out {
+  animation: fadeOut 3s forwards; /* Animação de saída */
+}
+
 .contact-social-links{
   display: none;
 }
 
 .contact-cube-skills{
   display: none;
+}
+
+.contact-title{
+  display: none;
+}
+
+.contact-text{
+  display: none;
+}
+
+.contact-card {
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.5s ease-out;
+}
+
+.contact-button {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100%);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  opacity: 0.9; /* Define a opacidade inicial */
+}
+
+.contact-button:hover {
+  opacity: 1; /* Aumenta a opacidade no hover */
 }
