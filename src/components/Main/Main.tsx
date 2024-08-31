@@ -1,4 +1,3 @@
-import React from "react";
 import FeaturedBox from "../FeaturedBox/FeaturedBox";
 import About from "../About/About";
 import Contact from "../Contact/Contact";
