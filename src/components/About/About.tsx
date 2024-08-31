@@ -1,10 +1,11 @@
 import "./About.css";
+import cv from "../../assets/files/Tiago_Pedro_Soares_CV.pdf";
 
 const About = () => {
   function downloadCV() {
     const link = document.createElement("a");
-    link.href = "../../assets/files/Tiago_Pedro_Soares_CV.pdf"; // Substitua pelo caminho real do seu PDF
-    link.download = "Your_CV.pdf"; // Nome do arquivo ao ser baixado
+    link.href = cv; // Substitua pelo caminho real do seu PDF
+    link.download = "Tiago_Pedro_CV.pdf"; // Nome do arquivo ao ser baixado
     link.style.display = "none"; // Não exibe o link
     document.body.appendChild(link);
     link.click(); // Simula o clique no link
