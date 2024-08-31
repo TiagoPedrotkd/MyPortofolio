@@ -1,0 +1,208 @@
+/* ----- POPPINS FONT Link ----- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* ----- VARIABLES ----- */
+:root {
+  --body-color: #222; /* Cor de fundo do corpo */
+  --color-white: #222; /* Cor de branco puro */
+
+  --text-color-second: #bbb; /* Cor de texto secundária */
+  --text-color-third: #fff; /* Cor de destaque para texto */
+
+  --first-color: #e81cff; /* Primeira cor (rosa vibrante) */
+  --first-color-hover: #40c9ff; /* Cor de hover (azul claro) */
+
+  --second-color: #444; /* Cor secundária */
+  --third-color: #e81cff; /* Cor terciária */
+
+  --first-shadow-color: rgba(255, 255, 255, 0.1); /* Cor para sombra leve */
+
+  --gradient-bg: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100%); /* Gradiente de fundo */
+}
+
+
+/* ----- BASE ----- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+    overflow-x: hidden;
+}
+
+
+/* ----- SMOOTH SCROLL ----- */
+html{
+    scroll-behavior: smooth;
+}
+
+/* ----- CHANGE THE SCROLL BAR DESIGN ----- */
+::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 25px;
+}
+::-webkit-scrollbar-track{
+    background: var(--color-white);
+}
+::-webkit-scrollbar-thumb{
+    background: #ccc;
+    border-radius: 30px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #bbb;
+}
+
+
+/* ---##-- REUSABLE CSS --##--- */
+
+/* ----- GLOBAL BUTTON DESIGN ----- */
+.btn{
+    font-weight: 500;
+    padding: 12px 20px;
+    background: #efefef;
+    color: #222;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s;
+    text-decoration: none;
+}
+.btn>i{
+    margin-left: 10px;
+}
+
+.btn:hover{
+    background: var(--gradient-bg);
+    color: var(--text-color-third);
+}
+
+
+/* ----- GLOBAL ICONS DESIGN ----- */
+i{
+    font-size: 16px;
+}
+
+/* ------- BASE -------- */
+body{
+    background: var(--body-color);
+}
+.container{
+    width: 100%;
+    position: relative;
+    overflow-x: hidden; /* not mandatory */
+}
+
+
+/* ----- MEDIA QUERY == 1024px / RESPONSIVE ----- */
+@media only screen and (max-width: 1024px){
+    .featured-text{
+        padding: 0;
+    }
+    .image, .image img{
+        width: 320px;
+        height: 320px;
+    }
+}
+
+/* ----- MEDIA QUERY == 900px / RESPONSIVE ----- */
+@media only screen and (max-width: 900px) {
+    .nav-button{
+        display: none;
+    }
+    .nav-menu.responsive{
+        left: 0;
+    }
+    .nav-menu{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(10px);
+        width: 100%;
+        min-height: 450px;
+        height: 90vh;
+        transition: .3s;
+    }
+
+    .uil-bars{
+        color: #fff;
+    }
+
+    .nav_menu_list{
+        flex-direction: column;
+    }
+    .nav-menu-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .featured-box{
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+    }
+    .featured-text{
+        width: 100%;
+        order: 2;
+        justify-content: center;
+        align-content: flex-start;
+        min-height: 60vh;
+    }
+    .social_icons{
+        margin-top: 2em;
+    }
+    .featured-image{
+        order: 1;
+        justify-content: center;
+        min-height: 150px;
+        width: 100%;
+        margin-top: 65px;
+    }
+    .image, .image img{
+        width: 150px;
+        height: 150px;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+    }
+    .col{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .about-info, .contact-info{
+        width: 100%;
+    }
+    .project-container{
+        justify-content: center;
+    }
+    .project-box{
+        width: 80%;
+    }
+
+}
+
+/* ----- MEDIA QUERY == 540px / RESPONSIVE ----- */
+
+@media only screen and (max-width: 540px){
+    .featured-name{
+        font-size: 40px;
+    }
+    .project-box{
+        width: 100%;
+    }
+    .form-inputs{
+        flex-direction: column;
+    }
+    .input-field{
+        width: 100%;
+    }
+}

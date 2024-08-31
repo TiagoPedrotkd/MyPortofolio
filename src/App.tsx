@@ -1,36 +1,14 @@
-import { useEffect, useLayoutEffect } from "react";
-import { Home } from "./components/Home/Home";
-
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
-gsap.registerPlugin(ScrollTrigger);
+import Layout from "./components/Layout/Layout";
+import Main from "./components/Main/Main";
+import ScrollRevealConfig from "./components/ScrollRevealConfig";
 
 function App() {
-
-  useEffect(() => {
-    gsap.to("progress", {
-      value: 100,
-      scrollTrigger: {
-        scrub: 0.5,
-      },
-    });
-  }, []);
-
-  useLayoutEffect(() => {
-    const loader = document.getElementById("loader")!;
-    setTimeout(() => {
-      loader.classList.add("loaded");
-      setTimeout(() => {
-        document.body.removeChild(loader);
-      }, 300);
-    }, 2000);
-  }, []);
-
-  return(
+  return (
     <>
-      <progress max="100" value="0"></progress>
-      <Home />
+      <ScrollRevealConfig />
+      <Layout>
+        <Main />
+      </Layout>
     </>
   );
 }
