@@ -1,13 +1,16 @@
-import { Outlet } from 'react-router-dom';
-import Bubbles from '../Bubbles/Bubbles';
+import React from "react";
 
-const Layout = () => {
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
+
+const Layout = ({ children }) => {
   return (
     <>
-      <Bubbles />
-      <Outlet />
+      <Header />
+      <main>{children}</main>
+      <Footer />
     </>
   );
 };
 
-export default Layout
+export default Layout;
