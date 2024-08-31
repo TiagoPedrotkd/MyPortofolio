@@ -58,7 +58,7 @@ const Contact = () => {
               Find Me <i className="uil uil-corner-right-down"></i>
             </h2>
             <p>
-              <i className="uil uil-envelope"></i> Email:
+              <i className="uil uil-envelope"></i>
               tiagopedrotkdfreelancer@gmail.com
             </p>
             <p>
