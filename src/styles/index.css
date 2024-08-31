@@ -79,59 +79,6 @@ html{
     color: var(--text-color-third);
 }
 
-/* ----- FOOTER BOX ----- */
-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    row-gap: 30px;
-    background: var(--body-color);
-    padding-block: 40px 60px;
-}
-.top-footer p{
-    font-size: 25px;
-    font-weight: 600;
-    color: var(--text-color-third);
-}
-.middle-footer .footer-menu{
-    display: flex;
-}
-.footer_menu_list{
-    list-style: none;
-}
-.footer_menu_list a{
-    text-decoration: none;
-    color: var(--text-color-third);
-    font-weight: 500;
-    margin-inline: 20px;
-}
-
-.footer_menu_list a:hover{
-    color: var(--text-color-second);
-}
-
-.alter{
-    color: var(--text-color-third);
-    text-decoration: none;
-}
-
-.alter:hover{
-    color: var(--text-color-second);
-}
-
-.footer-social-icons{
-    display: flex;
-    gap: 30px;
-}
-.bottom-footer{
-    font-size: 14px;
-    margin-top: 10px;
-    color: var(--text-color-third);
-}
-
-
-
 /* ----- GLOBAL ICONS DESIGN ----- */
 i{
     font-size: 16px;
@@ -149,7 +96,7 @@ body{
 
 
 /* ----- MEDIA QUERY == 1024px / RESPONSIVE ----- */
-@media only screen and (max-width: 1024px){
+@media (max-width: 1024px){
     .featured-text{
         padding: 0;
     }
@@ -160,7 +107,7 @@ body{
 }
 
 /* ----- MEDIA QUERY == 900px / RESPONSIVE ----- */
-@media only screen and (max-width: 900px) {
+@media (max-width: 900px) {
     .nav-button{
         display: none;
     }
@@ -244,7 +191,7 @@ body{
 
 /* ----- MEDIA QUERY == 540px / RESPONSIVE ----- */
 
-@media only screen and (max-width: 540px){
+@media (max-width: 540px){
     .featured-name{
         font-size: 40px;
     }
